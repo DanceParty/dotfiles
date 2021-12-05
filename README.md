@@ -2,4 +2,20 @@
 
 * **.vimrc** - vim configuration file
 * **.zshrc** - zsh configuration file
-  * requires oh-my-zsh, powerlevel10k theme, zsh-syntax-highlighting, zsh-autosuggestions
+  * requires oh-my-zsh, powerlevel10k theme, zsh-syntax-highlighting, zsh-autosuggestion
+
+# CLI/Tools
+
+* tmux
+* Homebrew
+
+# Programs
+
+* Discord
+* Spotify
+* Notion
+* Firefox
+* 1Password
+* iTerm
+* Adobe Lightroom
+* Figma
