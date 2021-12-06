@@ -8,6 +8,7 @@
 
 * tmux
 * Homebrew
+  * bat (cat replacement)
 
 # Programs
 
