@@ -16,7 +16,7 @@
 	ca = commit -a
 	cam = commit -am
 	cm = commit -m
-	s = status
+	s = status -s
 	p = push
 	pom = push origin main
 	pomas = push origin master
@@ -25,3 +25,6 @@
 	cob = checkout -b
 	co = checkout
 	fp = feetch -prune all
+
+	# remove branches that have already been merged with the main branch
+	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
