@@ -3,6 +3,8 @@
 * **.vimrc** - vim configuration file
 * **.zshrc** - zsh configuration file
   * requires oh-my-zsh, powerlevel10k theme, zsh-syntax-highlighting, zsh-autosuggestion
+* **.tmux.conf** - tmux configuration file
+* **.gitconfig** - git configuration file
 
 # CLI/Tools
 
@@ -10,6 +12,7 @@
 * Homebrew
   * bat (cat replacement)
   * exa (ls replacement)
+  * diff-so-fancy (git diff replacement)
 
 # Programs
 

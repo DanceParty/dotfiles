@@ -1,0 +1,27 @@
+[init]
+	defaultBranch = main
+[user]
+	name = Keevan Dance
+	email = danceparty@github.com
+[github]
+	user = DanceParty
+[push]
+	default = simple
+[core]
+	pager = diff-so-fancy | less --tabs=2 -RFX
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[alias]
+	a = add
+	ca = commit -a
+	cam = commit -am
+	cm = commit -m
+	s = status
+	p = push
+	pom = push origin main
+	pomas = push origin master
+	pum = pull origin main
+	pumas = pull origin master
+	cob = checkout -b
+	co = checkout
+	fp = feetch -prune all
