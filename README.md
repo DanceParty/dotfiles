@@ -6,7 +6,7 @@
 * **.tmux.conf** - tmux configuration file
 * **.gitconfig** - git configuration file
 * **.gitignore** - global gitignore file
-
+* **.macos** - a shell script to enable defaults for macos
 # CLI/Tools
 
 * tmux

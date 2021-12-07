@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+# ask for sudo permission
+sudo -v
+
+# Keep-alive: update existing `sudo` time stamp until `.macos` has finished
+while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
+
+# update keyboard key repeat rate
+defaults write NSGlobalDomain KeyRepeat -int 1
+defaults write NSGlobalDomain InitialKeyRepeat -int 10
+
+# allow cmd + q on finder
+defaults write com.apple.finder QuitMenuItem -bool true
