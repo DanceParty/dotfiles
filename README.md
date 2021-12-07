@@ -9,6 +9,7 @@
 * tmux
 * Homebrew
   * bat (cat replacement)
+  * exa (ls replacement)
 
 # Programs
 
