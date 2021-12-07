@@ -5,6 +5,7 @@
   * requires oh-my-zsh, powerlevel10k theme, zsh-syntax-highlighting, zsh-autosuggestion
 * **.tmux.conf** - tmux configuration file
 * **.gitconfig** - git configuration file
+* **.gitignore** - global gitignore file
 
 # CLI/Tools
 
