@@ -1,28 +1,58 @@
-" set line numbers by default
+"""""""""""""""""""""""""
+" vim configuration file
+"""""""""""""""""""""""""
+syntax on
+
+" fix 'redrawtime' exceeded, syntax highlighting disabled
+set re=0
+
+" set command line mode autocomplete to a list instead of tab only
+set wildmenu
+set wildmode=full
+
+" let copy and paste work with yank
+set clipboard=unnamed
+
+set hidden
+
+" tab 2
+set expandtab
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set smarttab
+set autoindent
+
+" highligh search
+set hlsearch
+
+" set line numbers
 set number
 
-""""""""""""""""
-""" Vim-Plug """
-""""""""""""""""
+"""""""""""""""""""""""""
+" plugins
+"""""""""""""""""""""""""
 
-" initialization
 call plug#begin('~/.vim/plugged')
 
-" Dracula theme
-Plug 'dracula/vim', { 'as': 'dracula' }
+" comment with gc<selector> (gcc, gcap, etc...)
+Plug 'tpope/vim-commentary'
 
-" file directory
-Plug 'preservim/nerdtree'
+" fuzzy finder
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 
-" nerdtree file/folder icons
-Plug 'ryanoasis/vim-devicons'
+" support json comments (get rid of red highlighting)
+Plug 'neoclide/jsonc.vim'
 
-" end of initialization
+Plug 'w0rp/ale'
+
 call plug#end()
 
-""""""""""""""""""
-" Configurations "
-""""""""""""""""""
+""""""""""""""""""""""""
+" hotkeys
+""""""""""""""""""""""""
 
-" Set the vim theme
-colorscheme dracula
+nnoremap <C-p> :FZF<CR> 
+
+" prettier
+nnoremap gp :silent %!npx prettier --stdin-filepath %<CR>

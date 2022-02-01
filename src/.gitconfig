@@ -28,3 +28,5 @@
 
 	# remove branches that have already been merged with the main branch
 	dm = "!git branch --merged | grep -v '\\*' | xargs -n 1 git branch -d"
+[pull]
+	rebase = false

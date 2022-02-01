@@ -108,9 +108,6 @@ source $ZSH/oh-my-zsh.sh
 #
 # Example aliases
 alias cat='bat --style=numbers'
-alias l='exa'
-alias la='exa -a'
-alias ll='exa -lah'
 alias ls='exa --color=auto'
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -120,11 +117,17 @@ alias ls='exa --color=auto'
 ### Custom Commands ###
 #######################
 
+# set term to 256 colors
+export TERM=xterm-256color
+
+# setup ripgrep as default on fzf
+if type rg &> /dev/null; then
+	  export FZF_DEFAULT_COMMAND='rg --files' 
+	  export FZF_DEFAULT_OPTS='-m --height 50% --border'
+fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
 source /Users/danceparty/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/danceparty/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/danceparty/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/danceparty/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /Users/danceparty/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
