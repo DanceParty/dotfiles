@@ -27,3 +27,4 @@
 * iTerm
 * Adobe Lightroom
 * Figma
+* LinearMouse
