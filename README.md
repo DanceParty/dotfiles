@@ -10,6 +10,7 @@
 
 # CLI/Tools
 
+* vim-plug (required for .vimrc to work)
 * tmux
 * Homebrew
   * bat (cat replacement)
